@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+    background-image: url(img/redball.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.header {
+    background-color: rgb(20, 20, 20);
+
+    box-shadow: 0 2px 4px 0 white, 0 2px 4px 0 rgba(29, 33, 55, 0.14), 0 2px 4px 0 rgba(29, 33, 55, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+input {
+    min-height: 40px;
+    min-width: 300px;
+    border-radius: 5px;
+    border-style: none;
+    outline: none;
+}
+
+h3 {
+    margin: 0 0 10px 0;
+    z-index: 3;
+    margin-right: 150px;
+}
+
+h4 {
+    margin: 3px 10px 3px 0;
+    white-space: nowrap;
+}
+
+.input-div {
+    border-radius: 5px;
+}
+
+.logo {
+    max-height: 50px;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    color: white;
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 300px;
+    max-height: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    margin: 20px;
+    border-radius: 90px;
+    border: solid transparent;
+}
+
+.card:hover {
+    border: solid gray;
+    cursor: pointer;
+}
+
+.img-front {
+    object-fit: contain;
+    width: 155%;
+    position: absolute;
+    bottom: -16px;
+    right: 0;
+}
+
+.img-ball {
+    object-fit: contain;
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    bottom: 38px;
+    left: -160px;
+    opacity: 0.05;
+    z-index: 2;
+}
+
+.card-header {
+    width: 100%;
+    height: 13%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6%;
+}
+
+.card-content {
+    height: 70%;
+}
+
+.card-cont-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25%;
+}
+
+.card-cont-right {
+    width: 50%;
+    max-width: 50%;
+    position: relative;
+}
+
+.type {
+    text-align: center;
+    max-width: max-content;
+    padding: 2px 4px 2px 4px;
+    margin-bottom: 6px;
+    border-radius: 4px;
+}
+
+.overlay {
+    width: 100%;
+    min-width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    background-color: black;
+    opacity: 0.4;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.card-back {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    position: fixed;
+    top: calc(50% - 250px);
+    left: calc(50% - 150px);
+    border-radius: 10px;
+    z-index: 11;
+}
+
+.card-back-1 {
+    width: 100%;
+    height: 50%;
+    color: white;
+    margin: 30px 10px 0 10px;
+}
+
+.close {
+    color: rgb(7, 7, 7);
+    position: absolute;
+    top: 13px;
+    right: 20px;
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+.img-back {
+    display: flex;
+    width: 200px;
+    position: absolute;
+    right: 95px;
+    top: 59px;
+}
+
+.card-back-2 {
+    background-color: white;
+    height: 44%;
+    border-radius: 20px 20px 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-back-3 {
+    background-color: white;
+    height: 41%;
+    border-radius: 20px 20px 10px 10px;
+    padding: 0 15px 15px 15px;
+}
+
+.arrow-left {
+    transform: rotate(180deg);
+}
+
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-top: 30%;
+}
+
+.bar-bg {
+    background-color: lightgrey;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.bar {
+    background-color: aquamarine;
+    height: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.bar-div {
+    width: 100%;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 9px;
+    width: 100%;
+}
+
+.load-btn {
+    background-color: gray;
+    color: white;
+    font-size: 14px;
+    padding: 2px 4px;
+    border: medium none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.load-btn:hover {
+    background-color: rgb(95, 95, 95);
+    transition: all 55ms;
+}
+
+.about-pokemon {
+    position: absolute;
+    top: 59%;
+    left: 14%;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 73px;
+    color: white;
+    background-color: rgb(7, 7, 7);
+}
+
+.stats-pokemon {
+    position: absolute;
+    top: 59%;
+    left: 64%;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 82px;
+    color: white;
+    background-color: rgb(7, 7, 7);
+}
+
+.about-pokemon:hover {
+    background-color: rgb(60, 55, 55);
+
+}
+
+.stats-pokemon:hover {
+    background-color: rgb(60, 55, 55);
+}
+
+.tbody {
+    top: 322px;
+    position: absolute;
+}
+
+.style-about1 {
+    margin-left: 14%;
+    margin-top: 15%;
+}
+
+.style-about2 {
+    margin-left: 14%;
+    margin-top: 7%;
+}
+
+.style-about3 {
+    margin-left: 14%;
+    margin-top: 7%;
+}
+
+@media(max-width: 900px) {
+
+    .logo {
+        display: none;
+    }
+
+    .card-back {
+        width: 340px;
+        left: calc(44.6% - 150px);
+    }
+}

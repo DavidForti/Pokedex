@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/pokedex.jpeg">
+
+</head>
+
+<body onload="loadPokedex()">
+
+    <div class="header">
+        <div class="logo-div">
+
+        </div>
+        <div class="input-div">
+            <input oninput="search()" type="search" name="" id="search" placeholder="Search pokemon">
+        </div>
+    </div>
+
+    <div id="content" class="content"></div>
+
+    <div id="overlay" class="d-none overlay" onclick="card()"></div>
+
+    <div id="back" class="d-none card-back">
+
+        <button onclick="about()" class="about-pokemon">About</button>
+        <button onclick="Stats()" class="stats-pokemon">Base-Stats</button>
+
+        <div class="card-back-1">
+            <h3 id="backName"></h3>
+            <div id="backTypes"></div>
+
+            <img id="backImg" class="img-back">
+
+            <div class="close" onclick="card()">
+                <b>X</b>
+            </div>
+        </div>
+
+        <div class="card-back-2" id="aboutPoke">
+            <h4 id="backSpecies" class="style-about1"> name </h4>
+            <h4 id="backHeight" class="style-about2">Height: 55</h4>
+            <h4 id="backWeight" class="style-about3">Weight: 80</h4>
+
+        </div>
+
+        <div class="card-back-3" id="baseStats">
+
+            <table>
+                <tbody class="tbody">
+                    <tr>
+                        <td>
+                            <h4>hp</h4>
+                        </td>
+                        <td class="bar-div">
+                            <div class="bar-bg">
+                                <div id="backHp" class="bar text-center">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>attack</h4>
+                        </td>
+                        <td class="bar-div">
+                            <div class="bar-bg">
+                                <div id="backAttack" class="bar text-center">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>defense</h4>
+                        </td>
+                        <td class="bar-div">
+                            <div class="bar-bg">
+                                <div id="backDefense" class="bar text-center">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>special-attack</h4>
+                        </td>
+                        <td class="bar-div">
+                            <div class="bar-bg">
+                                <div id="backSpecAttack" class="bar text-center">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>special-defense</h4>
+                        </td>
+                        <td class="bar-div">
+                            <div class="bar-bg">
+                                <div id="backSpecDefense" class="bar">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>speed</h4>
+                        </td>
+                        <td class="bar-div">
+                            <div class="bar-bg">
+                                <div id="backSpeed" class="bar text-center">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <div id="btnDiv" class="btn-div ">
+        <button id="loadBtn" class="load-btn" onclick="loadPokedex()">
+            Show more
+        </button>
+    </div>
+
+</body>
+
+</html>
